@@ -1,23 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import {AppShell, ColorSchemeProvider, MantineProvider } from "@mantine/core";
+import "./App.css"
+import { useState } from "react";
+import { HeaderAction } from "./Header/Header";
+import { Hero } from "./HeroSection/Hero";
+import { Welcome } from "./WelcomeSection/Welcome";
+// import { NavbarMinimal } from "./Header/Navbar";
 
 function App() {
+  const [colorScheme, setColorScheme] = useState("light");
+  const toggleColorScheme = () =>
+    setColorScheme(colorScheme === "dark" ? "light" : "dark");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <ColorSchemeProvider
+        colorScheme={colorScheme}
+        toggleColorScheme={toggleColorScheme}
+      >
+        <MantineProvider
+          withGlobalStyles
+          withNormalizeCSS
+          theme={{
+            colors: {
+              brand: ["#FFFFFF"],
+            },
+            secondaryColor: "brand",
+            colorScheme,
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <AppShell
+            // padding="md"
+            header={<HeaderAction />}
+            styles={(theme) => ({
+              main: {
+                backgroundColor:
+                  theme.colorScheme === "dark"
+                    ? theme.colors.dark[8]
+                    : theme.colors.gray[0],
+                padding: 0
+              },
+            })}
+          >
+            <Hero />
+            <Welcome />
+          </AppShell>
+
+          {/* <HeaderAction />
+          <Hero /> */}
+        </MantineProvider>
+      </ColorSchemeProvider>
     </div>
   );
 }
