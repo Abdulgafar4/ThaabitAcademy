@@ -6,8 +6,8 @@ import {
   Overlay,
   createStyles,
 } from "@mantine/core";
-import Bismillah from "../image/bismillah.png";
-import Masjid from "../image/masjid.png";
+import Bismillah from "../../images/bismillah.png";
+import Masjid from "../../images/masjid.png";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {

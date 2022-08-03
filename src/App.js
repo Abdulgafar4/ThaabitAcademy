@@ -1,9 +1,9 @@
 import {AppShell, ColorSchemeProvider, MantineProvider } from "@mantine/core";
 import "./App.css"
 import { useState } from "react";
-import { HeaderAction } from "./Header/Header";
-import { Hero } from "./HeroSection/Hero";
-import { Welcome } from "./WelcomeSection/Welcome";
+import { HeaderAction } from "./components/Header/Header";
+import { Hero } from "./components/HeroSection/Hero";
+import { Welcome } from "./components/WelcomeSection/Welcome";
 // import { NavbarMinimal } from "./Header/Navbar";
 
 function App() {

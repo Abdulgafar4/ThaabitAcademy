@@ -11,7 +11,7 @@ import {
   Group,
 } from "@mantine/core";
 import { IconDiamond } from "@tabler/icons";
-import Masjid from "../image/masjid.png";
+import Masjid from "../../images/masjid.png";
 
 
 
@@ -37,7 +37,6 @@ const useStyles = createStyles((theme) => ({
     },
   },
   description: {
-    color: theme.colorScheme === "dark" ? theme.white : theme.black,
     textAlign: "center",
     fontFamily: `Open Sans, serif`,
 
@@ -68,7 +67,7 @@ export function Welcome() {
               sx={{ width: 400 }}
             />
           </Center>
-          <Text className={classes.description} mt={40} mb={40}>
+          <Text className={classes.description} mt={40} mb={40} color="dimmed">
             Zayd Ibn Thaabit Academy Qur’an Schools for children & adult, are
             unique pioneering part-time educational institutions unlike that on
             offer from any other Madrasah & Qur’an school in Kwara State. These
@@ -82,14 +81,10 @@ export function Welcome() {
       </Container>
       <div>
         <Grid mt={60} justify="center" grow gutter="xl">
-          <Grid.Col xs={6} lg={3} >
+          <Grid.Col xs={6} lg={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image
-                  src={Masjid}
-                  height={160}
-                  alt="Norway"
-                />
+                <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -116,11 +111,7 @@ export function Welcome() {
           <Grid.Col xs={6} lg={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image
-                  src={Masjid}
-                  height={160}
-                  alt="Norway"
-                />
+                <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -144,14 +135,10 @@ export function Welcome() {
               </Button>
             </Card>
           </Grid.Col>
-          <Grid.Col xs={6} lg={3} >
+          <Grid.Col xs={6} lg={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image
-                  src={Masjid}
-                  height={160}
-                  alt="Norway"
-                />
+                <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -178,11 +165,7 @@ export function Welcome() {
           <Grid.Col xs={6} lg={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image
-                  src={Masjid}
-                  height={160}
-                  alt="Norway"
-                />
+                <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
