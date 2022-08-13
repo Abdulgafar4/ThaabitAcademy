@@ -5,7 +5,6 @@ import {
   Button,
   Overlay,
   createStyles,
-  Box,
   Card,
   Center,
 } from "@mantine/core";

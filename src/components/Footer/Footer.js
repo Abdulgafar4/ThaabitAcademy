@@ -1,11 +1,10 @@
-import { createStyles, Container, Group, ActionIcon, Center } from "@mantine/core";
+import { createStyles, Container, Group, ActionIcon } from "@mantine/core";
 import {
   IconBrandTwitter,
   IconBrandYoutube,
   IconBrandInstagram,
 } from "@tabler/icons";
 import FloatingWhatsApp from "react-floating-whatsapp";
-import Logo from "../../images/logo.png";
 
 
 const useStyles = createStyles((theme) => ({
@@ -32,7 +31,6 @@ const useStyles = createStyles((theme) => ({
     [theme.fn.smallerThan("xs")]: {
       marginTop: theme.spacing.md,
     },
-    // justifyContent: "center",
   },
 }));
 
@@ -42,11 +40,6 @@ export function FooterSocial() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        {/* <img
-          src={Logo}
-          alt="Logo"
-          style={{ width: 100, height: 130, marginTop: 10 }}
-        /> */}
         <Group spacing="xs" className={classes.links} noWrap>
           <ActionIcon size="lg" variant="default" radius="xl">
             <IconBrandTwitter size={18} stroke={1.5} />
