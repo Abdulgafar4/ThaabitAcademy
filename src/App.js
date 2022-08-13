@@ -4,6 +4,9 @@ import { useState } from "react";
 import { HeaderAction } from "./components/Header/Header";
 import { Hero } from "./components/HeroSection/Hero";
 import { Welcome } from "./components/WelcomeSection/Welcome";
+import { FaqWithImage } from "./components/Faq/Faq";
+import { FooterSocial } from "./components/Footer/Footer";
+// import FloatingWhatsApp from "react-floating-whatsapp";
 // import { NavbarMinimal } from "./Header/Navbar";
 
 function App() {
@@ -37,12 +40,14 @@ function App() {
                   theme.colorScheme === "dark"
                     ? theme.colors.dark[8]
                     : theme.colors.gray[0],
-                padding: 0
+                padding: 0,
               },
             })}
           >
             <Hero />
             <Welcome />
+            <FaqWithImage />
+            <FooterSocial />
           </AppShell>
 
           {/* <HeaderAction />

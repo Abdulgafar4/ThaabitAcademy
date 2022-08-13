@@ -37,7 +37,7 @@ export function SwitchToggle() {
   const { classes, cx } = useStyles();
 
   return (
-    <Group position="center" my={30}>
+    <Group position="center" my={30} mb={50}>
       <div className={classes.root}>
         <IconSun
           className={cx(classes.icon, classes.iconLight)}

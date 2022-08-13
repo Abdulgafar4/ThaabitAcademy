@@ -5,6 +5,9 @@ import {
   Button,
   Overlay,
   createStyles,
+  Box,
+  Card,
+  Center,
 } from "@mantine/core";
 import Bismillah from "../../images/bismillah.png";
 import Masjid from "../../images/masjid.png";
@@ -48,6 +51,9 @@ const useStyles = createStyles((theme) => ({
 
   highlight: {
     color: theme.colors[theme.primaryColor][4],
+    textAlign: "center",
+    fontWeight: 800,
+    fontSize: 80,
   },
 
   description: {
@@ -87,6 +93,21 @@ const useStyles = createStyles((theme) => ({
       },
     },
   },
+  boxStyles: {
+    borderRadius: 10,
+    padding: "20px 15px",
+    border: "1px solid transparent",
+  },
+
+  conHighlight:{
+    backgroundColor:
+      theme.colorScheme === "dark"
+        ? theme.fn.rgba(theme.colors.blue[7], 0.25)
+        : theme.colors.blue[5],
+    border: `1px solid ${
+      theme.colorScheme === "dark" ? theme.colors.blue[6] : theme.colors.blue[3]
+    }`,
+  },
 }));
 
 export function Hero() {
@@ -100,19 +121,31 @@ export function Hero() {
         <Title className={classes.title}>
           <img src={Bismillah} alt="Bismillah" />
         </Title>
+        <Title className={classes.highlight}>العلم قبل القول والعمل</Title>
         <Title className={classes.title}>
-          Islamic Education is the Righteous Path and the{" "}
-          <Text component="span" inherit className={classes.highlight}>
-            Ultimate Destiny
-          </Text>
+          Knowledge precedes speech and action.
+          {/* <Text component="span" inherit className={classes.highlight}>
+            العلم قبل القول والعمل
+          </Text> */}
         </Title>
 
+        {/* <Container size={640} className={classes.conHighlight}>
+          <Box className={classes.boxStyles}>
+            <Text size="lg" className={classes.description}>
+              A distinguished Academy aimed to instill Islamic etiquettes and
+              values.
+            </Text>
+          </Box>
+        </Container> */}
         <Container size={640}>
-          <Text size="lg" className={classes.description}>
-            The goal of Zayd Ibn Thaabit Academy is to stimulate the spiritual
-            and intellectual strengths of each child. Students are encouraged to
-            strive to achieve their full potential.
-          </Text>
+          <Card>
+            <Center>
+              <Text size="sm" color="dimmed">
+                A distinguished Academy aimed to instill Islamic etiquettes and
+                values.
+              </Text>
+            </Center>
+          </Card>
         </Container>
 
         <div className={classes.controls}>

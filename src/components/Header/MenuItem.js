@@ -69,7 +69,7 @@ export function MenuItem() {
   });
 
   return (
-    <Group spacing={5} className={classes.links}>
+    <Group spacing={5} className={classes.links} mb={25}>
       {items}
     </Group>
   );

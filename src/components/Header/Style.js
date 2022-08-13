@@ -1,13 +1,13 @@
 import { createStyles } from "@mantine/core";
 
-const HEADER_HEIGHT = 60;
+const HEADER_HEIGHT = 80;
 
 export const useStyles = createStyles((theme) => ({
-  header: {
-    backgroundColor: theme.secondaryColor,
-    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-    backdropFilter: "blur(5)",
-  },
+  // header: {
+  //   backgroundColor: theme.secondaryColor,
+  //   boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+  //   backdropFilter: "blur(5)",
+  // },
   inner: {
     height: HEADER_HEIGHT,
     display: "flex",

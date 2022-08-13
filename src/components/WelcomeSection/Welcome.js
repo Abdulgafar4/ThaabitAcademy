@@ -45,6 +45,18 @@ const useStyles = createStyles((theme) => ({
       textAlign: "left",
     },
   },
+  firstCol: {
+    display: "none",
+
+    "@media (min-width: 768px)": {
+      display: "flex",
+    },
+  },
+  fourthCol: {
+    "@media (min-width: 768px)": {
+      display: "none",
+    },
+  },
 }));
 
 
@@ -56,39 +68,47 @@ export function Welcome() {
     <div className={classes.wrapper}>
       <Container>
         <div>
-          <Center className={classes.title}>
-            Welcome to Zayd Ibn Thaabit Academy
-          </Center>
+          <Center className={classes.title}>Welcome to ZITA</Center>
           <Center mt={30}>
             <Divider
               size="sm"
               label={<IconDiamond size={10} />}
               labelPosition="center"
-              sx={{ width: 400 }}
             />
           </Center>
           <Text className={classes.description} mt={40} mb={40} color="dimmed">
-            Zayd Ibn Thaabit Academy Qur’an Schools for children & adult, are
-            unique pioneering part-time educational institutions unlike that on
-            offer from any other Madrasah & Qur’an school in Kwara State. These
-            centres are dedicated to teaching quality & traditional studies
-            enhanced by modern technologically advanced methods. We have three
-            programmes to choose from, available on weekday evenings & weekends
-            with the option of studying physically onsite at one of our branches
-            across Kwara State or online.
+            Zayd Ibn Thaabit Academy (ZITA) wishes to aid Muslim children,
+            adults, men, women and careerists who are ardent to learn about
+            religion. We offer a well structured and standard online learning
+            platform for children and adults, whore they learn about their
+            religion, how to recite the Qur'an fluently with tajweed and Arabic
+            literacy.
           </Text>
+          {/* <Text className={classes.description} mt={40} mb={40} color="dimmed">
+            We offer a well structured and standard online learning platform for
+            children and adults, whore they learn about their religion, how to
+            recite the Qur'an fluently with tajweed and Arabic literacy.
+          </Text> */}
         </div>
       </Container>
       <div>
-        <Grid mt={60} justify="center" grow gutter="xl">
-          <Grid.Col xs={6} lg={3}>
+        <Center className={classes.title}>Available Courses</Center>
+        <Center mt={30}>
+          <Divider
+            size="sm"
+            label={<IconDiamond size={10} />}
+            labelPosition="center"
+          />
+        </Center>
+        <Grid mt={60} justify="center" gutter="md">
+          <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
                 <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>Our Goal</Text>
+                <Text weight={500}>Qur'an Recitation & Memorization</Text>
               </Group>
 
               <Text size="sm" color="dimmed">
@@ -108,14 +128,14 @@ export function Welcome() {
               </Button>
             </Card>
           </Grid.Col>
-          <Grid.Col xs={6} lg={3}>
+          <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
                 <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>Our Mission</Text>
+                <Text weight={500}>Tajweed</Text>
               </Group>
 
               <Text size="sm" color="dimmed">
@@ -135,14 +155,14 @@ export function Welcome() {
               </Button>
             </Card>
           </Grid.Col>
-          <Grid.Col xs={6} lg={3}>
+          <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
                 <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>Our Duty</Text>
+                <Text weight={500}>Tawheed & Fiqh</Text>
               </Group>
 
               <Text size="sm" color="dimmed">
@@ -162,14 +182,98 @@ export function Welcome() {
               </Button>
             </Card>
           </Grid.Col>
-          <Grid.Col xs={6} lg={3}>
+          <Grid.Col xs={6} sm={4} md={3} className={classes.fourthCol}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
                 <Image src={Masjid} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>Our Ambition</Text>
+                <Text weight={500}>Islamic Doctrine</Text>
+              </Group>
+
+              <Text size="sm" color="dimmed">
+                With Fjord Tours you can explore more of the magical fjord
+                landscapes with tours and activities on and around the fjords of
+                Norway
+              </Text>
+
+              <Button
+                variant="light"
+                color="blue"
+                fullWidth
+                mt="md"
+                radius="md"
+              >
+                Learn more
+              </Button>
+            </Card>
+          </Grid.Col>
+        </Grid>
+
+        <Grid mt={20} justify="center" gutter="md">
+          <Grid.Col xs={6} sm={4} md={3} className={classes.firstCol}>
+            <Card shadow="sm" p="lg" radius="md" withBorder>
+              <Card.Section>
+                <Image src={Masjid} height={160} alt="Norway" />
+              </Card.Section>
+
+              <Group position="apart" mt="md" mb="xs">
+                <Text weight={500}>Islamic Doctrine</Text>
+              </Group>
+
+              <Text size="sm" color="dimmed">
+                With Fjord Tours you can explore more of the magical fjord
+                landscapes with tours and activities on and around the fjords of
+                Norway
+              </Text>
+
+              <Button
+                variant="light"
+                color="blue"
+                fullWidth
+                mt="md"
+                radius="md"
+              >
+                Learn more
+              </Button>
+            </Card>
+          </Grid.Col>
+          <Grid.Col xs={6} sm={4} md={3}>
+            <Card shadow="sm" p="lg" radius="md" withBorder>
+              <Card.Section>
+                <Image src={Masjid} height={160} alt="Norway" />
+              </Card.Section>
+
+              <Group position="apart" mt="md" mb="xs">
+                <Text weight={500}>Arabic literacy</Text>
+              </Group>
+
+              <Text size="sm" color="dimmed">
+                With Fjord Tours you can explore more of the magical fjord
+                landscapes with tours and activities on and around the fjords of
+                Norway
+              </Text>
+
+              <Button
+                variant="light"
+                color="blue"
+                fullWidth
+                mt="md"
+                radius="md"
+              >
+                Learn more
+              </Button>
+            </Card>
+          </Grid.Col>
+          <Grid.Col xs={6} sm={4} md={3}>
+            <Card shadow="sm" p="lg" radius="md" withBorder>
+              <Card.Section>
+                <Image src={Masjid} height={160} alt="Norway" />
+              </Card.Section>
+
+              <Group position="apart" mt="md" mb="xs">
+                <Text weight={500}>Hadeeth & Seerah</Text>
               </Group>
 
               <Text size="sm" color="dimmed">
