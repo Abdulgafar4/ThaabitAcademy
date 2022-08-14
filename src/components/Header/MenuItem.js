@@ -7,23 +7,25 @@ const links = [
   { link: "/about", label: "Home" },
   {
     link: "#1",
-    label: "Learn",
+    label: "Courses",
     links: [
-      { link: "/docs", label: "Documentation" },
-      { link: "/resources", label: "Resources" },
-      { link: "/community", label: "Community" },
-      { link: "/blog", label: "Blog" },
+      { link: "/quran", label: "Qur'an Recitation & Meorization" },
+      { link: "/tajweed", label: "Tajweed" },
+      { link: "/tawheed", label: "Tawheed & Fiqh" },
+      { link: "/islamicDoc", label: "Islamic Doctorine" },
+      { link: "/literacy", label: "Literacy" },
+      { link: "/hadeeth", label: "Hadeeth & Seerah" },
     ],
   },
   { link: "/about", label: "About" },
-  { link: "/pricing", label: "Pricing" },
+  { link: "/pricing", label: "Fee and Plans" },
   {
     link: "#2",
     label: "Support",
     links: [
       { link: "/faq", label: "FAQ" },
-      { link: "/demo", label: "Book a demo" },
-      { link: "/forums", label: "Forums" },
+      { link: "/contact", label: "Contact Us" },
+      { link: "/dotane", label: "Donate" },
     ],
   },
 ];
@@ -33,7 +35,9 @@ export function MenuItem() {
 
   const items = links.map((link) => {
     const menuItems = link?.links?.map((item) => (
-      <Menu.Item key={item.link}>{item.label}</Menu.Item>
+      <Menu.Item key={item.link} className={classes.box}>
+        {item.label}
+      </Menu.Item>
     ));
 
     if (menuItems) {

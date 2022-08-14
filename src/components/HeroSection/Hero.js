@@ -7,6 +7,7 @@ import {
   createStyles,
   Card,
   Center,
+  Popover,
 } from "@mantine/core";
 import Bismillah from "../../images/bismillah.png";
 import Masjid from "../../images/masjid.png";
@@ -19,11 +20,6 @@ const useStyles = createStyles((theme) => ({
     backgroundImage: `url(${Masjid})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-
-    // "@media (max-width: 520px)": {
-    //   paddingTop: 80,
-    //   paddingBottom: 50,
-    // },
   },
 
   inner: {
@@ -123,19 +119,7 @@ export function Hero() {
         <Title className={classes.highlight}>العلم قبل القول والعمل</Title>
         <Title className={classes.title}>
           Knowledge precedes speech and action.
-          {/* <Text component="span" inherit className={classes.highlight}>
-            العلم قبل القول والعمل
-          </Text> */}
         </Title>
-
-        {/* <Container size={640} className={classes.conHighlight}>
-          <Box className={classes.boxStyles}>
-            <Text size="lg" className={classes.description}>
-              A distinguished Academy aimed to instill Islamic etiquettes and
-              values.
-            </Text>
-          </Box>
-        </Container> */}
         <Container size={640}>
           <Card>
             <Center>
@@ -148,9 +132,18 @@ export function Hero() {
         </Container>
 
         <div className={classes.controls}>
-          <Button className={classes.control} size="lg">
-            Get started
-          </Button>
+          <Popover width={200} position="bottom" withArrow shadow="md">
+            <Popover.Target>
+              <Button className={classes.control} size="lg">
+                Get started
+              </Button>
+            </Popover.Target>
+            <Popover.Dropdown>
+              <Text size="sm">
+                Scrolldown and click the WhatsApp icon to get started.
+              </Text>
+            </Popover.Dropdown>
+          </Popover>
         </div>
       </div>
     </div>

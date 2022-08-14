@@ -9,9 +9,15 @@ import {
   Image,
   Button,
   Group,
+  Popover,
 } from "@mantine/core";
 import { IconDiamond } from "@tabler/icons";
-import Masjid from "../../images/masjid.png";
+import Quran from "../../images/squran.jpeg";
+import Literacy from "../../images/literacy.jpeg";
+import Hadeeth from "../../images/hadeeth.jpeg";
+import Tajweed from "../../images/tajweed.png";
+import Tawheed from "../../images/tawheed.jpg";
+import IslamicDoc from "../../images/islamicDoc.png";
 
 
 
@@ -59,10 +65,27 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
+  function learnMore (){
+    return (
+      <Popover width={200} position="bottom" withArrow shadow="md">
+        <Popover.Target>
+          <Button variant="light" color="blue" fullWidth mt="md" radius="md">
+            Learn more
+          </Button>
+        </Popover.Target>
+        <Popover.Dropdown>
+          <Text size="sm">
+            Contact us on WhatsApp to learn more by clicking the WhatsApp icon.
+          </Text>
+        </Popover.Dropdown>
+      </Popover>
+    );
+  };
+
+
 
 export function Welcome() {
   const { classes } = useStyles();
-
 
   return (
     <div className={classes.wrapper}>
@@ -84,18 +107,13 @@ export function Welcome() {
             religion, how to recite the Qur'an fluently with tajweed and Arabic
             literacy.
           </Text>
-          {/* <Text className={classes.description} mt={40} mb={40} color="dimmed">
-            We offer a well structured and standard online learning platform for
-            children and adults, whore they learn about their religion, how to
-            recite the Qur'an fluently with tajweed and Arabic literacy.
-          </Text> */}
         </div>
       </Container>
       <div>
         <Center className={classes.title}>Available Courses</Center>
         <Center mt={30}>
           <Divider
-            size="sm"
+            size="md"
             label={<IconDiamond size={10} />}
             labelPosition="center"
           />
@@ -104,7 +122,7 @@ export function Welcome() {
           <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Masjid} height={160} alt="Norway" />
+                <Image src={Quran} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -112,26 +130,19 @@ export function Welcome() {
               </Group>
 
               <Text size="sm" color="dimmed">
-                With Fjord Tours you can explore more of the magical fjord
-                landscapes with tours and activities on and around the fjords of
-                Norway
+                Allaah has promised to preserve the Quran in its original form
+                and helps His slaves to memorize it and preserve it in their
+                hearts. Alhamdulillaah, here is an opportunity for YOU to start
+                your Hifz program from the comfort of your home!
               </Text>
 
-              <Button
-                variant="light"
-                color="blue"
-                fullWidth
-                mt="md"
-                radius="md"
-              >
-                Learn more
-              </Button>
+              {learnMore()}
             </Card>
           </Grid.Col>
           <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Masjid} height={160} alt="Norway" />
+                <Image src={Tajweed} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -139,26 +150,19 @@ export function Welcome() {
               </Group>
 
               <Text size="sm" color="dimmed">
-                With Fjord Tours you can explore more of the magical fjord
-                landscapes with tours and activities on and around the fjords of
-                Norway
+                In the context of the recitation of the Quran, tajwīd is a set
+                of rules for the correct pronunciation of the letters with all
+                their qualities and applying the various traditional methods of
+                recitation.
               </Text>
 
-              <Button
-                variant="light"
-                color="blue"
-                fullWidth
-                mt="md"
-                radius="md"
-              >
-                Learn more
-              </Button>
+              {learnMore()}
             </Card>
           </Grid.Col>
           <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Masjid} height={160} alt="Norway" />
+                <Image src={Tawheed} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -166,26 +170,20 @@ export function Welcome() {
               </Group>
 
               <Text size="sm" color="dimmed">
-                With Fjord Tours you can explore more of the magical fjord
-                landscapes with tours and activities on and around the fjords of
-                Norway
+                Tawhid is the indivisible oneness concept of monotheism in
+                Islam. Tawhid is the religion's central and single most
+                important concept, which a Muslim's entire religious adherence
+                rests. Tawheed is the basic fundamental to Muslims’ belief in
+                Allah.
               </Text>
 
-              <Button
-                variant="light"
-                color="blue"
-                fullWidth
-                mt="md"
-                radius="md"
-              >
-                Learn more
-              </Button>
+              {learnMore()}
             </Card>
           </Grid.Col>
           <Grid.Col xs={6} sm={4} md={3} className={classes.fourthCol}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Masjid} height={160} alt="Norway" />
+                <Image src={IslamicDoc} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -198,15 +196,7 @@ export function Welcome() {
                 Norway
               </Text>
 
-              <Button
-                variant="light"
-                color="blue"
-                fullWidth
-                mt="md"
-                radius="md"
-              >
-                Learn more
-              </Button>
+              {learnMore()}
             </Card>
           </Grid.Col>
         </Grid>
@@ -215,7 +205,7 @@ export function Welcome() {
           <Grid.Col xs={6} sm={4} md={3} className={classes.firstCol}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Masjid} height={160} alt="Norway" />
+                <Image src={IslamicDoc} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -228,21 +218,13 @@ export function Welcome() {
                 Norway
               </Text>
 
-              <Button
-                variant="light"
-                color="blue"
-                fullWidth
-                mt="md"
-                radius="md"
-              >
-                Learn more
-              </Button>
+              {learnMore()}
             </Card>
           </Grid.Col>
           <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Masjid} height={160} alt="Norway" />
+                <Image src={Literacy} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -255,21 +237,13 @@ export function Welcome() {
                 Norway
               </Text>
 
-              <Button
-                variant="light"
-                color="blue"
-                fullWidth
-                mt="md"
-                radius="md"
-              >
-                Learn more
-              </Button>
+              {learnMore()}
             </Card>
           </Grid.Col>
           <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Masjid} height={160} alt="Norway" />
+                <Image src={Hadeeth} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
@@ -282,15 +256,7 @@ export function Welcome() {
                 Norway
               </Text>
 
-              <Button
-                variant="light"
-                color="blue"
-                fullWidth
-                mt="md"
-                radius="md"
-              >
-                Learn more
-              </Button>
+              {learnMore()}
             </Card>
           </Grid.Col>
         </Grid>

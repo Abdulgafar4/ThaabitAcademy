@@ -1,4 +1,4 @@
-import { Header, Container, Group, Button,  Burger, Drawer } from "@mantine/core";
+import { Header, Container, Group, Button,  Burger, Drawer, Popover, Text } from "@mantine/core";
 import { useState } from "react";
 import { MenuItem } from "./MenuItem";
 import { NavbarMinimal } from "./Navbar";
@@ -12,12 +12,7 @@ export function HeaderAction() {
    const [opened, setOpened] = useState(false);
 
   return (
-    <Header
-      height={60}
-      sx={{ borderBottom: 0 }}
-      mb={150}
-      // className={classes.header}
-    >
+    <Header height={60} sx={{ borderBottom: 0 }} mb={150}>
       <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
@@ -34,22 +29,31 @@ export function HeaderAction() {
             className={classes.burger}
             size="sm"
           />
-          {/* <Text
-            weight={500}
-            size="lg"
-            sx={{ lineHeight: 1, fontFamily: "'Pacifico', cursive;" }}
-            mr={3}
-          >
-            Thaabit Academy
-          </Text> */}
-          <img src={Logo}  alt="Logo" style={{ width:90, height: 100, marginTop: 20 }} />
+          <img
+            src={Logo}
+            alt="Logo"
+            style={{ width: 90, height: 100, marginTop: 20 }}
+          />
         </Group>
-
         <MenuItem />
         <SwitchToggle />
-        <Button radius="xl" sx={{ height: 30 }} className={classes.btn} mb={20}>
-          Get early access
-        </Button>
+        <Popover width={200} position="bottom" withArrow shadow="md">
+          <Popover.Target>
+            <Button
+              radius="xl"
+              sx={{ height: 30 }}
+              className={classes.btn}
+              mb={20}
+            >
+              Get early access
+            </Button>
+          </Popover.Target>
+          <Popover.Dropdown>
+            <Text size="sm">
+              Scrolldown and click the WhatsApp icon to get started.
+            </Text>
+          </Popover.Dropdown>
+        </Popover>
       </Container>
     </Header>
   );

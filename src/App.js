@@ -2,12 +2,7 @@ import {AppShell, ColorSchemeProvider, MantineProvider } from "@mantine/core";
 import "./App.css"
 import { useState } from "react";
 import { HeaderAction } from "./components/Header/Header";
-import { Hero } from "./components/HeroSection/Hero";
-import { Welcome } from "./components/WelcomeSection/Welcome";
-import { FaqWithImage } from "./components/Faq/Faq";
-import { FooterSocial } from "./components/Footer/Footer";
-// import FloatingWhatsApp from "react-floating-whatsapp";
-// import { NavbarMinimal } from "./Header/Navbar";
+import HomePage from "./pages/Home";
 
 function App() {
   const [colorScheme, setColorScheme] = useState("light");
@@ -32,7 +27,6 @@ function App() {
           }}
         >
           <AppShell
-            // padding="md"
             header={<HeaderAction />}
             styles={(theme) => ({
               main: {
@@ -44,14 +38,8 @@ function App() {
               },
             })}
           >
-            <Hero />
-            <Welcome />
-            <FaqWithImage />
-            <FooterSocial />
+           <HomePage />
           </AppShell>
-
-          {/* <HeaderAction />
-          <Hero /> */}
         </MantineProvider>
       </ColorSchemeProvider>
     </div>

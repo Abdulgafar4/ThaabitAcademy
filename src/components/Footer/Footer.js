@@ -41,21 +41,43 @@ export function FooterSocial() {
     <div className={classes.footer}>
       <Container className={classes.inner}>
         <Group spacing="xs" className={classes.links} noWrap>
-          <ActionIcon size="lg" variant="default" radius="xl">
+          <ActionIcon
+            size="lg"
+            variant="default"
+            radius="xl"
+            component="a"
+            target="_blank"
+            href="https://twitter.com/mantinedev"
+          >
             <IconBrandTwitter size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
+          <ActionIcon
+            size="lg"
+            variant="default"
+            radius="xl"
+            component="a"
+            target="_blank"
+            href="https://twitter.com/mantinedev"
+          >
             <IconBrandYoutube size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" variant="default" radius="xl">
+          <ActionIcon
+            size="lg"
+            variant="default"
+            radius="xl"
+            component="a"
+            target="_blank"
+            href="https://twitter.com/mantinedev"
+          >
             <IconBrandInstagram size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>
-      <FloatingWhatsApp 
+      <FloatingWhatsApp
         phoneNumber="+2348116882741"
         accountName="Abu Fawzan"
         chatMessage="Hello Welcome to ZITA"
+        allowClickAway
       />
     </div>
   );

@@ -1,4 +1,4 @@
-import { Box, Button, NavLink } from "@mantine/core";
+import { Box, Button, NavLink, Popover, Text } from "@mantine/core";
 import {
   IconHome,
   IconNote,
@@ -50,9 +50,18 @@ export function NavbarMinimal() {
         <NavLink label="Book a demo" className={classes.box} />
         <NavLink label="Forums" className={classes.box} />
       </NavLink>
-      <Button radius="xl" sx={{ height: 30 }} m={30} mt="50%">
-        Get early access
-      </Button>
+      <Popover width={200} position="bottom" withArrow shadow="md">
+        <Popover.Target>
+          <Button radius="xl" sx={{ height: 30 }} m={30} mt="50%">
+            Get early access
+          </Button>
+        </Popover.Target>
+        <Popover.Dropdown>
+          <Text size="sm">
+            Scrolldown and click the WhatsApp icon to get started.
+          </Text>
+        </Popover.Dropdown>
+      </Popover>
     </Box>
   );
 }
