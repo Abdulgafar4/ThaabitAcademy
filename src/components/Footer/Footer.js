@@ -76,7 +76,7 @@ export function FooterSocial() {
       <FloatingWhatsApp
         phoneNumber="+2348099321972"
         accountName="ZITA"
-        chatMessage="السلام عليكم ورحمه الله وبركاته Welcome to ZITA. How we be of help?"
+        chatMessage="السلام عليكم ورحمه الله وبركاته Welcome to ZITA. How can we be of help?"
         allowClickAway
       />
     </div>
