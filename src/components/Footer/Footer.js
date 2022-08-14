@@ -1,8 +1,8 @@
 import { createStyles, Container, Group, ActionIcon } from "@mantine/core";
 import {
-  IconBrandTwitter,
-  IconBrandYoutube,
   IconBrandInstagram,
+  IconBrandGmail,
+  IconBrandFacebook,
 } from "@tabler/icons";
 import FloatingWhatsApp from "react-floating-whatsapp";
 
@@ -47,9 +47,9 @@ export function FooterSocial() {
             radius="xl"
             component="a"
             target="_blank"
-            href="https://twitter.com/mantinedev"
+            href="https://www.facebook.com/104093419036751/posts/pfbid02CaCgkbNyFvYWdGrLM98yXgycHbzTcxqkMzB2v2HcVFNuEnA4K4VAFTfrT71KBDbnl/"
           >
-            <IconBrandTwitter size={18} stroke={1.5} />
+            <IconBrandFacebook size={18} stroke={1.5} />
           </ActionIcon>
           <ActionIcon
             size="lg"
@@ -57,9 +57,9 @@ export function FooterSocial() {
             radius="xl"
             component="a"
             target="_blank"
-            href="https://twitter.com/mantinedev"
+            // href="zaydibnthaabitacademy@gmail.com"
           >
-            <IconBrandYoutube size={18} stroke={1.5} />
+            <IconBrandGmail size={18} stroke={1.5} />
           </ActionIcon>
           <ActionIcon
             size="lg"
@@ -67,16 +67,16 @@ export function FooterSocial() {
             radius="xl"
             component="a"
             target="_blank"
-            href="https://twitter.com/mantinedev"
+            href="https://instagram.com/zaydibnthaabitacademy"
           >
             <IconBrandInstagram size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>
       <FloatingWhatsApp
-        phoneNumber="+2348116882741"
-        accountName="Abu Fawzan"
-        chatMessage="Hello Welcome to ZITA"
+        phoneNumber="+2348099321972"
+        accountName="ZITA"
+        chatMessage="السلام عليكم ورحمه الله وبركاته Welcome to ZITA. How we be of help?"
         allowClickAway
       />
     </div>

@@ -19,15 +19,20 @@ export function NavbarMinimal() {
         className={classes.box}
       />
       <NavLink
-        label="Learn"
+        label="Courses"
         icon={<IconNote size={26} stroke={1.5} />}
         childrenOffset={28}
         className={classes.box}
       >
-        <NavLink label="Documentation" className={classes.box} />
-        <NavLink label="Resources" className={classes.box} />
-        <NavLink label="Community" className={classes.box} />
-        <NavLink label="Blog" className={classes.box} />
+        <NavLink
+          label="Qur'an Recitation & Meorization"
+          className={classes.box}
+        />
+        <NavLink label="Tajweed" className={classes.box} />
+        <NavLink label="Tawheed & Fiqh" className={classes.box} />
+        <NavLink label="Hadeeth" className={classes.box} />
+        <NavLink label="Literacy" className={classes.box} />
+        <NavLink label="Seerah" className={classes.box} />
       </NavLink>
 
       <NavLink
@@ -36,7 +41,7 @@ export function NavbarMinimal() {
         className={classes.box}
       />
       <NavLink
-        label="Pricing"
+        label="Fee and Plans"
         icon={<IconCoin size={26} stroke={1.5} />}
         className={classes.box}
       />
@@ -47,8 +52,8 @@ export function NavbarMinimal() {
         className={classes.box}
       >
         <NavLink label="FAQ" className={classes.box} />
-        <NavLink label="Book a demo" className={classes.box} />
-        <NavLink label="Forums" className={classes.box} />
+        <NavLink label="Contact Us" className={classes.box} />
+        <NavLink label="Donate" className={classes.box} />
       </NavLink>
       <Popover width={200} position="bottom" withArrow shadow="md">
         <Popover.Target>

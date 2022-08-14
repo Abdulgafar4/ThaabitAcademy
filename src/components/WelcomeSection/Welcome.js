@@ -16,8 +16,8 @@ import Quran from "../../images/squran.jpeg";
 import Literacy from "../../images/literacy.jpeg";
 import Hadeeth from "../../images/hadeeth.jpeg";
 import Tajweed from "../../images/tajweed.png";
-import Tawheed from "../../images/tawheed.jpg";
-import IslamicDoc from "../../images/islamicDoc.png";
+import Tawheed from "../../images/tawheed.jpeg";
+import Seerah from "../../images/seerah.jpeg";
 
 
 
@@ -133,7 +133,9 @@ export function Welcome() {
                 Allaah has promised to preserve the Quran in its original form
                 and helps His slaves to memorize it and preserve it in their
                 hearts. Alhamdulillaah, here is an opportunity for YOU to start
-                your Hifz program from the comfort of your home!
+                your Hifz program from the comfort of your home!. We have an
+                amazing and a unique style to make the recitation suiting and
+                repetition style to ease the memorization of the Qur'an.
               </Text>
 
               {learnMore()}
@@ -153,7 +155,9 @@ export function Welcome() {
                 In the context of the recitation of the Quran, tajwīd is a set
                 of rules for the correct pronunciation of the letters with all
                 their qualities and applying the various traditional methods of
-                recitation.
+                recitation. When you learn Quran with Tajweed, you’ll be able to
+                pronounce the letters and words in Quranic verses correctly,
+                giving every letter its right in reciting the Quran.
               </Text>
 
               {learnMore()}
@@ -171,10 +175,12 @@ export function Welcome() {
 
               <Text size="sm" color="dimmed">
                 Tawhid is the indivisible oneness concept of monotheism in
-                Islam. Tawhid is the religion's central and single most
+                Islam. Tawhid is the religion's central & single most
                 important concept, which a Muslim's entire religious adherence
-                rests. Tawheed is the basic fundamental to Muslims’ belief in
-                Allah.
+                rests. Tawheed is basic fundamental to Muslims’ belief in
+                Allah. And Fiqh is understanding & practices of
+                sharia,(i.e) understanding of the divine Islamic law as
+                revealed in the Quran & the Sunnah.
               </Text>
 
               {learnMore()}
@@ -183,17 +189,22 @@ export function Welcome() {
           <Grid.Col xs={6} sm={4} md={3} className={classes.fourthCol}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={IslamicDoc} height={160} alt="Norway" />
+                <Image src={Hadeeth} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>Islamic Doctrine</Text>
+                <Text weight={500}>Hadeeth</Text>
               </Group>
 
               <Text size="sm" color="dimmed">
-                With Fjord Tours you can explore more of the magical fjord
-                landscapes with tours and activities on and around the fjords of
-                Norway
+                The Prophet (S.A.W) said: “May Allah beautify a man who hears a
+                saying of mine, so he understands it, remembers it and conveys
+                it. There may be one who conveys knowledge to someone who
+                understands it better than he does.” At-Tirmidhi (2658) narrated
+                from ‘Abdullah ibn Mas‘ood.We have available materials and
+                schemes that make learning, implementation and Memorization of
+                the prophetic Ahadeeth easier as well as the biographies of the
+                narrators.
               </Text>
 
               {learnMore()}
@@ -205,17 +216,22 @@ export function Welcome() {
           <Grid.Col xs={6} sm={4} md={3} className={classes.firstCol}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={IslamicDoc} height={160} alt="Norway" />
+                <Image src={Hadeeth} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>Islamic Doctrine</Text>
+                <Text weight={500}>Hadeeth</Text>
               </Group>
 
               <Text size="sm" color="dimmed">
-                With Fjord Tours you can explore more of the magical fjord
-                landscapes with tours and activities on and around the fjords of
-                Norway
+                The Prophet (S.A.W) said: “May Allah beautify a man who hears a
+                saying of mine, so he understands it, remembers it and conveys
+                it. There may be one who conveys knowledge to someone who
+                understands it better than he does.” At-Tirmidhi (2658) narrated
+                from ‘Abdullah ibn Mas‘ood.We have available materials and
+                schemes that make learning, implementation and Memorization of
+                the prophetic Ahadeeth easier as well as the biographies of the
+                narrators.
               </Text>
 
               {learnMore()}
@@ -232,9 +248,15 @@ export function Welcome() {
               </Group>
 
               <Text size="sm" color="dimmed">
-                With Fjord Tours you can explore more of the magical fjord
-                landscapes with tours and activities on and around the fjords of
-                Norway
+                The Arabic language is the symbol of Islam and its people.
+                Allah, may He be glorified and exalted, chose the Arabic
+                language to be the vessel which would carry this light and
+                guidance to mankind. We have all it takes to teach the Arabic
+                not only to the intermediates but also to the beginners right
+                from the identification of the Arabic letters, the right
+                pronunciation, joining of the letters with their signs, to
+                fluent reading of the Qur'an, Arabic words and to converse with
+                basic and simple Arabic in shaa Allah.
               </Text>
 
               {learnMore()}
@@ -243,17 +265,23 @@ export function Welcome() {
           <Grid.Col xs={6} sm={4} md={3}>
             <Card shadow="sm" p="lg" radius="md" withBorder>
               <Card.Section>
-                <Image src={Hadeeth} height={160} alt="Norway" />
+                <Image src={Seerah} height={160} alt="Norway" />
               </Card.Section>
 
               <Group position="apart" mt="md" mb="xs">
-                <Text weight={500}>Hadeeth & Seerah</Text>
+                <Text weight={500}>Seerah</Text>
               </Group>
 
               <Text size="sm" color="dimmed">
-                With Fjord Tours you can explore more of the magical fjord
-                landscapes with tours and activities on and around the fjords of
-                Norway
+                Allâh says 'We already sent messengers before you. We have told
+                you the stories of some of them, while others We have not. It
+                was not for any messenger to bring a sign without Allah’s
+                permission. But when Allah’s decree comes, judgment will be
+                passed with fairness, and the people of falsehood will then be
+                in ˹total˺ loss.' Q 40:78 We help kids and adults study verified
+                and authentic stories about the lives of the Prophets,
+                Companions and the pious predecessors. To learn from their ways
+                of life and act upon their values.
               </Text>
 
               {learnMore()}
