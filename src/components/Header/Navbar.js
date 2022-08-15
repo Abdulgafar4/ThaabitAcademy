@@ -44,8 +44,8 @@ export function NavbarMinimal() {
         label="About"
         icon={<IconInfoCircle size={26} stroke={1.5} />}
         className={classes.box}
-        component="a"
-        href="/about"
+        // component="a"
+        // href="/about"
         // active={location.pathname === "/about"}
       />
       <NavLink
