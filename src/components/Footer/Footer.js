@@ -1,8 +1,8 @@
 import { createStyles, Container, Group, ActionIcon } from "@mantine/core";
 import {
   IconBrandInstagram,
-  IconBrandGmail,
   IconBrandFacebook,
+  IconBrandTwitter,
 } from "@tabler/icons";
 import FloatingWhatsApp from "react-floating-whatsapp";
 
@@ -47,7 +47,7 @@ export function FooterSocial() {
             radius="xl"
             component="a"
             target="_blank"
-            href="https://www.facebook.com/104093419036751/posts/pfbid02CaCgkbNyFvYWdGrLM98yXgycHbzTcxqkMzB2v2HcVFNuEnA4K4VAFTfrT71KBDbnl/"
+            href="https://www.facebook.com/Daflayki"
           >
             <IconBrandFacebook size={18} stroke={1.5} />
           </ActionIcon>
@@ -57,9 +57,9 @@ export function FooterSocial() {
             radius="xl"
             component="a"
             target="_blank"
-            // href="zaydibnthaabitacademy@gmail.com"
+            href="https://twitter.com/AbuHumayraah"
           >
-            <IconBrandGmail size={18} stroke={1.5} />
+            <IconBrandTwitter size={18} stroke={1.5} />
           </ActionIcon>
           <ActionIcon
             size="lg"

@@ -101,9 +101,9 @@ export function Welcome() {
           </Center>
           <Text className={classes.description} mt={40} mb={40} color="dimmed">
             Zayd Ibn Thaabit Academy (ZITA) wishes to aid Muslim children,
-            adults, men, women and careerists who are ardent to learn about
+            adults, men, women and careerists who are ardent to learn about their 
             religion. We offer a well structured and standard online learning
-            platform for children and adults, whore they learn about their
+            platform for children and adults, where they learn about their
             religion, how to recite the Qur'an fluently with tajweed and Arabic
             literacy.
           </Text>
@@ -201,7 +201,7 @@ export function Welcome() {
                 saying of mine, so he understands it, remembers it and conveys
                 it. There may be one who conveys knowledge to someone who
                 understands it better than he does.” At-Tirmidhi (2658) narrated
-                from ‘Abdullah ibn Mas‘ood.We have available materials and
+                from ‘Abdullah ibn Mas‘ood. We have available materials and
                 schemes that make learning, implementation and Memorization of
                 the prophetic Ahadeeth easier as well as the biographies of the
                 narrators.
@@ -228,7 +228,7 @@ export function Welcome() {
                 saying of mine, so he understands it, remembers it and conveys
                 it. There may be one who conveys knowledge to someone who
                 understands it better than he does.” At-Tirmidhi (2658) narrated
-                from ‘Abdullah ibn Mas‘ood.We have available materials and
+                from ‘Abdullah ibn Mas‘ood. We have available materials and
                 schemes that make learning, implementation and Memorization of
                 the prophetic Ahadeeth easier as well as the biographies of the
                 narrators.

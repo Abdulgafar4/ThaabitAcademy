@@ -4,7 +4,7 @@ import { IconChevronDown } from "@tabler/icons";
 import { useStyles } from "./Style";
 
 const links = [
-  { link: "/about", label: "Home" },
+  { link: "/", label: "Home" },
   {
     link: "#1",
     label: "Courses",
@@ -44,16 +44,18 @@ export function MenuItem() {
       return (
         <Menu key={link.label} trigger="hover" exitTransitionDuration={0}>
           <Menu.Target>
-            <a
+            <div
+              component="a"
               href={link.link}
               className={classes.link}
+              target="_blank"
               onClick={(event) => event.preventDefault()}
             >
               <Center>
                 <span className={classes.linkLabel}>{link.label}</span>
                 <IconChevronDown size={12} stroke={1.5} />
               </Center>
-            </a>
+            </div>
           </Menu.Target>
           <Menu.Dropdown>{menuItems}</Menu.Dropdown>
         </Menu>
